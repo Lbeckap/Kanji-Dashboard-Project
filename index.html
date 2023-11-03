@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="language, learning, dashboard, kanji, flashcards" />
+    <meta name="author" content="Lori Phillips" />
+    <link rel="stylesheet" href="mainStyle.css"> 
+    <title>Kanji Skill Tracker</title>
+
+  </head> 
+  <body>
+    <header class="header">
+      <section class="logo">
+        <a href="index.html"
+          ><img class="logoImg" src="images/logo.png" alt="logo"
+        /></a>
+      </section>
+
+      <nav class="menu">
+        <a href="#">Home</a>&nbsp; <a href="#">Set Selection</a>&nbsp;
+        <a href="#">Reading</a>&nbsp; <a href="#">Exams</a>&nbsp;
+        <a href="#">Login</a>&nbsp;
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="module" id="item2">
+        <h1>Previous &nbsp; 1 - 10</h1>
+        <article class="moduleContent">
+          <table class="table">
+            <tr>
+              <th>&#9829;</th>
+              <th>Module</th>
+              <th>Progress</th>
+            </tr>
+            <tr>
+              <td>&#9829;</td>
+              <td>Kanji</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>&#9829;</td>
+              <td>Quizzes</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>&#9786;</td>
+              <td>Vocabulary</td>
+              <td>91%</td>
+            </tr>
+            <tr>
+              <td>&#9829;</td>
+              <td>Marked Kanji</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>&#9786;</td>
+              <td>Marked Vocabulary</td>
+              <td>7</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+
+      <section class="module" id="item3">
+        <h1>Current &nbsp; 11 - 20</h1>
+        <article class="moduleContent">
+          <ul>
+            <li>
+              <details>
+                <summary>This week's kanji</summary>
+                <p>国, 言, 上, 分, 生, 手, 自, 行, 者, ニ</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>This week's vacabulary</summary>
+                <p>
+                  外国人, 言う, 上手な, 分かる, 生まれる, 自分, 飛行機, 人気者,
+                  二十, 言葉
+                </p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>You have marked these items for review</summary>
+                <p>者, 飛行機, 国, 上手な, 生まれる</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Ready for a Quiz?</summary>
+                <p><a href="#">11-20 : Quiz 1</a></p>
+                <p><a href="#">11-20 : Quiz 2</a></p>
+              </details>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="module" id="item4">
+        <h1>Next &nbsp; 21 - 30</h1>
+        <article class="kanjiPreview moduleContent">
+          <p>間</p>
+          <p>事</p>
+          <p>思</p>
+          <p>時</p>
+          <p>気</p>
+          <p>会</p>
+          <p>十</p>
+          <p>家</p>
+          <p>女</p>
+          <p>三</p>
+        </article>
+        <button type="button" class="button">Start New Set!</button>
+      </section>
+
+      <section class="module" id="item5">
+        <h1>Profile & Progress</h1>
+        <article class="moduleContent">
+          <table>
+            <tr>
+              <td rowspan="2" class="imgBackground">
+                <img
+                  src="images/profilePic.PNG"
+                  alt="profile picture"
+                  width="60%"
+                />
+              </td>
+              <td>Username: catdaddy</td>
+            </tr>
+            <tr>
+              <td>Since: 10/2023</td>
+            </tr>
+          </table>
+          <progress max="100" value="25"></progress>
+          <p>You have completed 25% of the curriculum.</p>
+        </article>
+      </section>
+
+      <section class="module" id="item6">
+        <h1>Daily Quiz</h1>
+        <article class="moduleContent" lang="en">
+          <!--When I change to lang="ja" the font and layout adjusts slightly. Not sure how to prevent this from happening-->
+          <p>Complete each vocabulary word with the missing kanji.</p>
+          <form>
+            <label for="q1">1:</label> &nbsp; 
+            去<input type="text" id="q1" name="q1" />（きょねん)
+            <br /><br />
+
+            <label for="q2">2:</label> &nbsp;
+            <input type="text" id="q2" name="q2" />きい（おおきい)
+            <br /><br />
+
+            <label for="q3">3:</label> &nbsp;
+            <input type="text" id="q3" name="q3" />の人（おんなのひと)
+            <br /><br />
+
+            <label for="q4">4:</label> &nbsp; 
+            昨<input type="text" id="q4" name="q4" />（きのう)
+            <br /><br />
+
+            <label for="q5">5:</label>
+            &nbsp;
+            <input type="text" id="q5" name="q5" />気（にんき)
+            <br /><br />
+
+            <input type="submit" value="Submit" class="button" />
+          </form>
+        </article>
+        <aside>
+          <p>Check back daily to test what you have learned!</p>
+        </aside>
+      </section>
+
+      <section class="module" id="item7">
+        <h1>Listening</h1>
+        <article class="moduleContent">
+          <img
+            src="images/easyJ6.PNG"
+            alt="woman asking a porter a question"
+            width="60%"
+            height="auto"
+          />
+          <figure>
+            <figcaption>Listen to audio:</figcaption>
+          </figure>
+          <audio controls src="assets/audioEasyJ6.mp3">
+            <a href="assets/audioEasyJ6.mp3"> Download audio </a>
+          </audio>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Kanji Skill Tracker</p>
+    </footer>
+  </body>
+</html>
